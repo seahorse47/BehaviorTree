@@ -11,3 +11,7 @@
 *.lai
 *.la
 *.a
+
+
+behavior/behavior.xcodeproj/xcuserdata
+behavior/behavior.xcodeproj/project.xcworkspace/xcuserdata
