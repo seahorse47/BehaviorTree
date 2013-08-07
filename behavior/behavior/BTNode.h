@@ -55,7 +55,16 @@ namespace behavior {
         kTaskIsDone     = 1, // task is done, this node should return kBTSuccess immediately
     };
     
-    class BTTask
+    class __memory_pool_object
+    {
+    public:
+        static void* operator new (size_t size);
+        static void operator delete (void *p);
+        static void* operator new[] (size_t size);
+        static void operator delete[] (void* p);
+    };
+    
+    class BTTask: public __memory_pool_object
     {
     public:
         BTTask(BTNode* node) : m_pNode(node) {}
@@ -71,23 +80,8 @@ namespace behavior {
         BTTaskCtxPointer m_pContext;
     };
     
-#if defined(BT_USE_BEHAVIOR_POOL)
-    class __Behavior_sealer {
-        friend class Behavior;
-        __Behavior_sealer(){}
-    };
-    class Behavior: __Behavior_sealer
+    class Behavior: public __memory_pool_object
     {
-    public:
-        static void* operator new (size_t size);
-        static void operator delete (void *p);
-        static void* operator new[] (size_t size);
-        static void operator delete[] (void* p);
-    private:
-#else
-    class Behavior
-    {
-#endif
     public:
         Behavior()
         : m_pNode(NULL), m_pTask(NULL), m_pContext(NULL), m_eStatus(kBTInvalid), m_bTerminated(true)

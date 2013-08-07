@@ -13,5 +13,7 @@
 *.a
 
 
-behavior/behavior.xcodeproj/xcuserdata
-behavior/behavior.xcodeproj/project.xcworkspace/xcuserdata
+# behavior/behavior.xcodeproj/xcuserdata
+# behavior/behavior.xcodeproj/project.xcworkspace/xcuserdata
+*/*.xcodeproj/xcuserdata
+*/*.xcodeproj/project.xcworkspace/xcuserdata

@@ -7,28 +7,67 @@
 //
 
 #include "BTNode.h"
+#if defined(BT_USE_MEMORY_POOL)
+#   include "dlmalloc/dlmalloc-2.8.6.h"
+#   define POOL_MALLOC(size)    dlmalloc(size)
+#   define POOL_FREE(p)         dlfree(p)
+#else
+#   define POOL_MALLOC(size)    malloc(size)
+#   define POOL_MALLOC(p)       free(p)
+#endif
 
 namespace behavior {
-#if defined(BT_USE_BEHAVIOR_POOL)
-    // TODO implement object pool here
-    void* Behavior::operator new (size_t size)
+#if defined(BT_USE_MEMORY_POOL)
+    // implement object pool here
+    void* __memory_pool_object::operator new (size_t size)
     {
-//        return allocate_from_pool(size);
+#ifdef DEBUG
+//        printf("operator new (%ld)\n", size);
+#endif
+        return POOL_MALLOC(size);
+    }
+    
+    void __memory_pool_object::operator delete (void *p)
+    {
+#ifdef DEBUG
+//        printf("operator delete (%p)\n", p);
+#endif
+        POOL_FREE(p); // return memory to pool
+    }
+    
+    void* __memory_pool_object::operator new[] (size_t size)
+    {
+#ifdef DEBUG
+//        printf("operator new[] (%ld)\n", size);
+#endif
+        return POOL_MALLOC (size);
+    }
+    
+    void __memory_pool_object::operator delete[] (void* p)
+    {
+#ifdef DEBUG
+//        printf("operator delete[] (%p)\n", p);
+#endif
+        POOL_FREE (p);
+    }
+#else
+    // default implementation: call the global ones
+    void* __memory_pool_object::operator new (size_t size)
+    {
         return ::operator new (size);
     }
     
-    void Behavior::operator delete (void *p)
+    void __memory_pool_object::operator delete (void *p)
     {
-//        free_to_pool(p); // return memory to pool
         ::operator delete (p);
     }
     
-    void* Behavior::operator new[] (size_t size)
+    void* __memory_pool_object::operator new[] (size_t size)
     {
         return ::operator new[] (size);
     }
     
-    void Behavior::operator delete[] (void* p)
+    void __memory_pool_object::operator delete[] (void* p)
     {
         ::operator delete[] (p);
     }

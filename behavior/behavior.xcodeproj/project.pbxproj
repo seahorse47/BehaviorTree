@@ -7,122 +7,136 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		E918D13A17B12D68001E498D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E918D13917B12D68001E498D /* Foundation.framework */; };
-		E918D15417B12DA2001E498D /* BTBasicNodes.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E918D14817B12DA2001E498D /* BTBasicNodes.cpp */; };
-		E918D15517B12DA2001E498D /* BTComposite.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E918D14A17B12DA2001E498D /* BTComposite.cpp */; };
-		E918D15617B12DA2001E498D /* BTDecorator.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E918D14C17B12DA2001E498D /* BTDecorator.cpp */; };
-		E918D15717B12DA2001E498D /* BTMutableComposite.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E918D14E17B12DA2001E498D /* BTMutableComposite.cpp */; };
-		E918D15817B12DA2001E498D /* BTNode.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E918D15017B12DA2001E498D /* BTNode.cpp */; };
-		E918D15917B12DA2001E498D /* BTObject.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E918D15217B12DA2001E498D /* BTObject.cpp */; };
+		68911DD517B2537100FDEFD8 /* Behavior.h in Headers */ = {isa = PBXBuildFile; fileRef = 68911DC817B2537100FDEFD8 /* Behavior.h */; };
+		68911DD617B2537100FDEFD8 /* BTBasicNodes.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 68911DC917B2537100FDEFD8 /* BTBasicNodes.cpp */; };
+		68911DD717B2537100FDEFD8 /* BTBasicNodes.h in Headers */ = {isa = PBXBuildFile; fileRef = 68911DCA17B2537100FDEFD8 /* BTBasicNodes.h */; };
+		68911DD817B2537100FDEFD8 /* BTComposite.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 68911DCB17B2537100FDEFD8 /* BTComposite.cpp */; };
+		68911DD917B2537100FDEFD8 /* BTComposite.h in Headers */ = {isa = PBXBuildFile; fileRef = 68911DCC17B2537100FDEFD8 /* BTComposite.h */; };
+		68911DDA17B2537100FDEFD8 /* BTDecorator.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 68911DCD17B2537100FDEFD8 /* BTDecorator.cpp */; };
+		68911DDB17B2537100FDEFD8 /* BTDecorator.h in Headers */ = {isa = PBXBuildFile; fileRef = 68911DCE17B2537100FDEFD8 /* BTDecorator.h */; };
+		68911DDC17B2537100FDEFD8 /* BTMutableComposite.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 68911DCF17B2537100FDEFD8 /* BTMutableComposite.cpp */; };
+		68911DDD17B2537100FDEFD8 /* BTMutableComposite.h in Headers */ = {isa = PBXBuildFile; fileRef = 68911DD017B2537100FDEFD8 /* BTMutableComposite.h */; };
+		68911DDE17B2537100FDEFD8 /* BTNode.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 68911DD117B2537100FDEFD8 /* BTNode.cpp */; };
+		68911DDF17B2537100FDEFD8 /* BTNode.h in Headers */ = {isa = PBXBuildFile; fileRef = 68911DD217B2537100FDEFD8 /* BTNode.h */; };
+		68911DE017B2537100FDEFD8 /* BTObject.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 68911DD317B2537100FDEFD8 /* BTObject.cpp */; };
+		68911DE117B2537100FDEFD8 /* BTObject.h in Headers */ = {isa = PBXBuildFile; fileRef = 68911DD417B2537100FDEFD8 /* BTObject.h */; };
+		68911DEE17B255DF00FDEFD8 /* dlmalloc-2.8.6.h in Headers */ = {isa = PBXBuildFile; fileRef = 68911DEC17B255DF00FDEFD8 /* dlmalloc-2.8.6.h */; };
+		68911DEF17B255DF00FDEFD8 /* dlmalloc.c in Sources */ = {isa = PBXBuildFile; fileRef = 68911DED17B255DF00FDEFD8 /* dlmalloc.c */; };
 /* End PBXBuildFile section */
 
-/* Begin PBXCopyFilesBuildPhase section */
-		E918D13417B12D68001E498D /* CopyFiles */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "include/${PRODUCT_NAME}";
-			dstSubfolderSpec = 16;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXCopyFilesBuildPhase section */
-
 /* Begin PBXFileReference section */
-		E918D13617B12D68001E498D /* libbehavior.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libbehavior.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		E918D13917B12D68001E498D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		E918D13D17B12D68001E498D /* behavior-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "behavior-Prefix.pch"; sourceTree = "<group>"; };
-		E918D14717B12DA2001E498D /* Behavior.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Behavior.h; sourceTree = "<group>"; };
-		E918D14817B12DA2001E498D /* BTBasicNodes.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = BTBasicNodes.cpp; sourceTree = "<group>"; };
-		E918D14917B12DA2001E498D /* BTBasicNodes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BTBasicNodes.h; sourceTree = "<group>"; };
-		E918D14A17B12DA2001E498D /* BTComposite.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = BTComposite.cpp; sourceTree = "<group>"; };
-		E918D14B17B12DA2001E498D /* BTComposite.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BTComposite.h; sourceTree = "<group>"; };
-		E918D14C17B12DA2001E498D /* BTDecorator.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = BTDecorator.cpp; sourceTree = "<group>"; };
-		E918D14D17B12DA2001E498D /* BTDecorator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BTDecorator.h; sourceTree = "<group>"; };
-		E918D14E17B12DA2001E498D /* BTMutableComposite.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = BTMutableComposite.cpp; sourceTree = "<group>"; };
-		E918D14F17B12DA2001E498D /* BTMutableComposite.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BTMutableComposite.h; sourceTree = "<group>"; };
-		E918D15017B12DA2001E498D /* BTNode.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = BTNode.cpp; sourceTree = "<group>"; };
-		E918D15117B12DA2001E498D /* BTNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BTNode.h; sourceTree = "<group>"; };
-		E918D15217B12DA2001E498D /* BTObject.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = BTObject.cpp; sourceTree = "<group>"; };
-		E918D15317B12DA2001E498D /* BTObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BTObject.h; sourceTree = "<group>"; };
+		68911DBA17B252E800FDEFD8 /* libbehavior.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libbehavior.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		68911DC817B2537100FDEFD8 /* Behavior.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Behavior.h; path = behavior/Behavior.h; sourceTree = "<group>"; };
+		68911DC917B2537100FDEFD8 /* BTBasicNodes.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = BTBasicNodes.cpp; path = behavior/BTBasicNodes.cpp; sourceTree = "<group>"; };
+		68911DCA17B2537100FDEFD8 /* BTBasicNodes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BTBasicNodes.h; path = behavior/BTBasicNodes.h; sourceTree = "<group>"; };
+		68911DCB17B2537100FDEFD8 /* BTComposite.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = BTComposite.cpp; path = behavior/BTComposite.cpp; sourceTree = "<group>"; };
+		68911DCC17B2537100FDEFD8 /* BTComposite.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BTComposite.h; path = behavior/BTComposite.h; sourceTree = "<group>"; };
+		68911DCD17B2537100FDEFD8 /* BTDecorator.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = BTDecorator.cpp; path = behavior/BTDecorator.cpp; sourceTree = "<group>"; };
+		68911DCE17B2537100FDEFD8 /* BTDecorator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BTDecorator.h; path = behavior/BTDecorator.h; sourceTree = "<group>"; };
+		68911DCF17B2537100FDEFD8 /* BTMutableComposite.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = BTMutableComposite.cpp; path = behavior/BTMutableComposite.cpp; sourceTree = "<group>"; };
+		68911DD017B2537100FDEFD8 /* BTMutableComposite.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BTMutableComposite.h; path = behavior/BTMutableComposite.h; sourceTree = "<group>"; };
+		68911DD117B2537100FDEFD8 /* BTNode.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = BTNode.cpp; path = behavior/BTNode.cpp; sourceTree = "<group>"; };
+		68911DD217B2537100FDEFD8 /* BTNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BTNode.h; path = behavior/BTNode.h; sourceTree = "<group>"; };
+		68911DD317B2537100FDEFD8 /* BTObject.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = BTObject.cpp; path = behavior/BTObject.cpp; sourceTree = "<group>"; };
+		68911DD417B2537100FDEFD8 /* BTObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BTObject.h; path = behavior/BTObject.h; sourceTree = "<group>"; };
+		68911DEC17B255DF00FDEFD8 /* dlmalloc-2.8.6.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "dlmalloc-2.8.6.h"; sourceTree = "<group>"; };
+		68911DED17B255DF00FDEFD8 /* dlmalloc.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = dlmalloc.c; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		E918D13317B12D68001E498D /* Frameworks */ = {
+		68911DB717B252E800FDEFD8 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E918D13A17B12D68001E498D /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		E918D12B17B12D68001E498D = {
+		68911DB117B252E800FDEFD8 = {
 			isa = PBXGroup;
 			children = (
-				E918D13B17B12D68001E498D /* behavior */,
-				E918D13817B12D68001E498D /* Frameworks */,
-				E918D13717B12D68001E498D /* Products */,
+				68911DE217B2557A00FDEFD8 /* third_party */,
+				68911DC717B2536100FDEFD8 /* behavior */,
+				68911DBB17B252E800FDEFD8 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		E918D13717B12D68001E498D /* Products */ = {
+		68911DBB17B252E800FDEFD8 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				E918D13617B12D68001E498D /* libbehavior.a */,
+				68911DBA17B252E800FDEFD8 /* libbehavior.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		E918D13817B12D68001E498D /* Frameworks */ = {
+		68911DC717B2536100FDEFD8 /* behavior */ = {
 			isa = PBXGroup;
 			children = (
-				E918D13917B12D68001E498D /* Foundation.framework */,
+				68911DC817B2537100FDEFD8 /* Behavior.h */,
+				68911DC917B2537100FDEFD8 /* BTBasicNodes.cpp */,
+				68911DCA17B2537100FDEFD8 /* BTBasicNodes.h */,
+				68911DCB17B2537100FDEFD8 /* BTComposite.cpp */,
+				68911DCC17B2537100FDEFD8 /* BTComposite.h */,
+				68911DCD17B2537100FDEFD8 /* BTDecorator.cpp */,
+				68911DCE17B2537100FDEFD8 /* BTDecorator.h */,
+				68911DCF17B2537100FDEFD8 /* BTMutableComposite.cpp */,
+				68911DD017B2537100FDEFD8 /* BTMutableComposite.h */,
+				68911DD117B2537100FDEFD8 /* BTNode.cpp */,
+				68911DD217B2537100FDEFD8 /* BTNode.h */,
+				68911DD317B2537100FDEFD8 /* BTObject.cpp */,
+				68911DD417B2537100FDEFD8 /* BTObject.h */,
 			);
-			name = Frameworks;
+			name = behavior;
 			sourceTree = "<group>";
 		};
-		E918D13B17B12D68001E498D /* behavior */ = {
+		68911DE217B2557A00FDEFD8 /* third_party */ = {
 			isa = PBXGroup;
 			children = (
-				E918D14717B12DA2001E498D /* Behavior.h */,
-				E918D14817B12DA2001E498D /* BTBasicNodes.cpp */,
-				E918D14917B12DA2001E498D /* BTBasicNodes.h */,
-				E918D14A17B12DA2001E498D /* BTComposite.cpp */,
-				E918D14B17B12DA2001E498D /* BTComposite.h */,
-				E918D14C17B12DA2001E498D /* BTDecorator.cpp */,
-				E918D14D17B12DA2001E498D /* BTDecorator.h */,
-				E918D14E17B12DA2001E498D /* BTMutableComposite.cpp */,
-				E918D14F17B12DA2001E498D /* BTMutableComposite.h */,
-				E918D15017B12DA2001E498D /* BTNode.cpp */,
-				E918D15117B12DA2001E498D /* BTNode.h */,
-				E918D15217B12DA2001E498D /* BTObject.cpp */,
-				E918D15317B12DA2001E498D /* BTObject.h */,
-				E918D13C17B12D68001E498D /* Supporting Files */,
+				68911DEB17B255DF00FDEFD8 /* dlmalloc */,
 			);
-			path = behavior;
+			name = third_party;
 			sourceTree = "<group>";
 		};
-		E918D13C17B12D68001E498D /* Supporting Files */ = {
+		68911DEB17B255DF00FDEFD8 /* dlmalloc */ = {
 			isa = PBXGroup;
 			children = (
-				E918D13D17B12D68001E498D /* behavior-Prefix.pch */,
+				68911DEC17B255DF00FDEFD8 /* dlmalloc-2.8.6.h */,
+				68911DED17B255DF00FDEFD8 /* dlmalloc.c */,
 			);
-			name = "Supporting Files";
+			name = dlmalloc;
+			path = third_party/dlmalloc;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
+/* Begin PBXHeadersBuildPhase section */
+		68911DB817B252E800FDEFD8 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				68911DD517B2537100FDEFD8 /* Behavior.h in Headers */,
+				68911DD717B2537100FDEFD8 /* BTBasicNodes.h in Headers */,
+				68911DD917B2537100FDEFD8 /* BTComposite.h in Headers */,
+				68911DDB17B2537100FDEFD8 /* BTDecorator.h in Headers */,
+				68911DDD17B2537100FDEFD8 /* BTMutableComposite.h in Headers */,
+				68911DDF17B2537100FDEFD8 /* BTNode.h in Headers */,
+				68911DE117B2537100FDEFD8 /* BTObject.h in Headers */,
+				68911DEE17B255DF00FDEFD8 /* dlmalloc-2.8.6.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
 /* Begin PBXNativeTarget section */
-		E918D13517B12D68001E498D /* behavior */ = {
+		68911DB917B252E800FDEFD8 /* behavior */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = E918D14417B12D68001E498D /* Build configuration list for PBXNativeTarget "behavior" */;
+			buildConfigurationList = 68911DBE17B252E800FDEFD8 /* Build configuration list for PBXNativeTarget "behavior" */;
 			buildPhases = (
-				E918D13217B12D68001E498D /* Sources */,
-				E918D13317B12D68001E498D /* Frameworks */,
-				E918D13417B12D68001E498D /* CopyFiles */,
+				68911DB617B252E800FDEFD8 /* Sources */,
+				68911DB717B252E800FDEFD8 /* Frameworks */,
+				68911DB817B252E800FDEFD8 /* Headers */,
 			);
 			buildRules = (
 			);
@@ -130,141 +144,152 @@
 			);
 			name = behavior;
 			productName = behavior;
-			productReference = E918D13617B12D68001E498D /* libbehavior.a */;
+			productReference = 68911DBA17B252E800FDEFD8 /* libbehavior.a */;
 			productType = "com.apple.product-type.library.static";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		E918D12D17B12D68001E498D /* Project object */ = {
+		68911DB217B252E800FDEFD8 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0450;
+				LastUpgradeCheck = 0460;
 				ORGANIZATIONNAME = hailong;
 			};
-			buildConfigurationList = E918D13017B12D68001E498D /* Build configuration list for PBXProject "behavior" */;
+			buildConfigurationList = 68911DB517B252E800FDEFD8 /* Build configuration list for PBXProject "behavior" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
 			);
-			mainGroup = E918D12B17B12D68001E498D;
-			productRefGroup = E918D13717B12D68001E498D /* Products */;
+			mainGroup = 68911DB117B252E800FDEFD8;
+			productRefGroup = 68911DBB17B252E800FDEFD8 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				E918D13517B12D68001E498D /* behavior */,
+				68911DB917B252E800FDEFD8 /* behavior */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
-		E918D13217B12D68001E498D /* Sources */ = {
+		68911DB617B252E800FDEFD8 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E918D15417B12DA2001E498D /* BTBasicNodes.cpp in Sources */,
-				E918D15517B12DA2001E498D /* BTComposite.cpp in Sources */,
-				E918D15617B12DA2001E498D /* BTDecorator.cpp in Sources */,
-				E918D15717B12DA2001E498D /* BTMutableComposite.cpp in Sources */,
-				E918D15817B12DA2001E498D /* BTNode.cpp in Sources */,
-				E918D15917B12DA2001E498D /* BTObject.cpp in Sources */,
+				68911DD617B2537100FDEFD8 /* BTBasicNodes.cpp in Sources */,
+				68911DD817B2537100FDEFD8 /* BTComposite.cpp in Sources */,
+				68911DDA17B2537100FDEFD8 /* BTDecorator.cpp in Sources */,
+				68911DDC17B2537100FDEFD8 /* BTMutableComposite.cpp in Sources */,
+				68911DDE17B2537100FDEFD8 /* BTNode.cpp in Sources */,
+				68911DE017B2537100FDEFD8 /* BTObject.cpp in Sources */,
+				68911DEF17B255DF00FDEFD8 /* dlmalloc.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
-		E918D14217B12D68001E498D /* Debug */ = {
+		68911DBC17B252E800FDEFD8 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
+					"BT_USE_MEMORY_POOL=1",
 					"$(inherited)",
 				);
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
-				SDKROOT = iphoneos;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
 			};
 			name = Debug;
 		};
-		E918D14317B12D68001E498D /* Release */ = {
+		68911DBD17B252E800FDEFD8 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = "BT_USE_MEMORY_POOL=1";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
-				SDKROOT = iphoneos;
-				VALIDATE_PRODUCT = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				SDKROOT = macosx;
 			};
 			name = Release;
 		};
-		E918D14517B12D68001E498D /* Debug */ = {
+		68911DBF17B252E800FDEFD8 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				DSTROOT = /tmp/behavior.dst;
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "behavior/behavior-Prefix.pch";
-				OTHER_LDFLAGS = "-ObjC";
+				EXECUTABLE_PREFIX = lib;
+				HEADER_SEARCH_PATHS = ./third_party;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SKIP_INSTALL = YES;
 			};
 			name = Debug;
 		};
-		E918D14617B12D68001E498D /* Release */ = {
+		68911DC017B252E800FDEFD8 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				DSTROOT = /tmp/behavior.dst;
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "behavior/behavior-Prefix.pch";
-				OTHER_LDFLAGS = "-ObjC";
+				EXECUTABLE_PREFIX = lib;
+				HEADER_SEARCH_PATHS = ./third_party;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SKIP_INSTALL = YES;
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		E918D13017B12D68001E498D /* Build configuration list for PBXProject "behavior" */ = {
+		68911DB517B252E800FDEFD8 /* Build configuration list for PBXProject "behavior" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				E918D14217B12D68001E498D /* Debug */,
-				E918D14317B12D68001E498D /* Release */,
+				68911DBC17B252E800FDEFD8 /* Debug */,
+				68911DBD17B252E800FDEFD8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		E918D14417B12D68001E498D /* Build configuration list for PBXNativeTarget "behavior" */ = {
+		68911DBE17B252E800FDEFD8 /* Build configuration list for PBXNativeTarget "behavior" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				E918D14517B12D68001E498D /* Debug */,
-				E918D14617B12D68001E498D /* Release */,
+				68911DBF17B252E800FDEFD8 /* Debug */,
+				68911DC017B252E800FDEFD8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = E918D12D17B12D68001E498D /* Project object */;
+	rootObject = 68911DB217B252E800FDEFD8 /* Project object */;
 }

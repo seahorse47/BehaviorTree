@@ -1,7 +1,0 @@
-//
-// Prefix header for all source files of the 'behavior' target in the 'behavior' project
-//
-
-#ifdef __OBJC__
-    #import <Foundation/Foundation.h>
-#endif
